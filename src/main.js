@@ -3,7 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import qs from 'qs'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
 
+Vue.use(iView)
+
+Vue.prototype.$axios = axios
+Vue.prototype.$qs = qs
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
